@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!----------------------body---------------- -->
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo_anonymous.png" width="125" />
+          </div>
+
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="BTS SIO.html">BTS SIO</a></li>
+              <li><a href="Ecole & Entreprise.html">Ecole & Entreprise</a></li>
+              <li>
+                <a href="Projets & Missions.html">Projets & Missions</a>
+              </li>
+              <!-- <li><a href="Projets.html">Projets</a></li> -->
+              <li><a href="Compétences.html">Compétences</a></li>
+              <li>
+                <a href="Veille Technologique.html">Veille Technologique</a>
+              </li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <img
+              src="images/menu.png"
+              class="menu-icon"
+              onclick="menutoggle()"
+            />
+          </nav>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <br />
+            <br />
+
+            <h1>BTS SIO <br /></h1>
+            <br />
+            <p>
+              Vous y retrouverez ici l'ensemble des informations concernant le
+              BTS SIO option SLAM & SISR.<br />
+            </p>
+            <br />
+            <a href="#BTS" class="btn">Laissez vous guider&rarr;</a>
+          </div>
+        </div>
+        <br />
+      </div>
+    </header>
+
+    <!------------------------BTS--------------------->
+    <section class="offer">
+      <div class="small-container">
+        <div class="col-2">
+          <h1 id="BTS">Brevet de Technicien Supérieur</h1>
+        </div>
+        <p>
+          Le BTS est un diplôme reconnu par l'état de niveau BAC+2. Ce cursus,
+          sanctionné par un diplôme de niveau Bac+2, se déroule en lycée ou en
+          école spécialisée et est reconnu pour son approche
+          professionnalisante. En combinant enseignements théoriques et stages
+          en entreprise, le BTS plus particulièrement dans mon cas le BTS SIO
+          (Services Informatiques aux Organisations), prépare efficacement les
+          étudiants à entrer sur le marché du travail. En effet, le programme a
+          évolué et propose deux spécialités bien distinctes : Le BTS SIO Option
+          SISR et Option SLAM (la spécialités que j'ai choisis).
+        </p>
+      </div>
+    </section>
+    <!------------------BTS-SIO-SLAM---------------------->
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- Bloc cliquable à gauche -->
+    <section class="centrale">
+      <div class="bloc" onclick="afficherBlocGauche()">
+        <div class="titre">BTS SIO SLAM</div>
+        <i class="fa fa-quote-left"></i>
+        <p>
+          La spécialisation SLAM du BTS SIO est elle plus orientée
+          Développement. Elle permet d'apprendre à réaliser des logiciels, sites
+          webs, applications mobiles, mais aussi de rédiger des documentations
+          techniques liées à celles-ci. De plus, elle permet d'apprendre à
+          former des utilisateurs pour gérer la maintenance des applications.
+          <small><i>Les débouchées sont les suivantes&rarr;</i></small>
+        </p>
+      </div>
+
+      <div class="bloc" onclick="afficherBlocDroit()">
+        <div class="titre">BTS SIO SISR</div>
+        <i class="fa fa-quote-left"></i>
+
+        <p>
+          La spécialisation SISR du BTS SIO permet d'apprendre un métier qui
+          consiste à installer, configurer et gérer les équipements et les
+          réseaux informatiques. Cela signifie intervenir sur la conception, la
+          mise en place, le déploiement et la maintenance des programmes
+          destinés à la gestion au sein d'une organisation, avec un œil
+          également du côté de la cybersécurité.
+          <small><i>Les débouchées sont les suivantes&rarr;</i></small>
+        </p>
+      </div>
+    </section>
+
+    <!-- Bloc caché à droite -->
+    <section class="centrale">
+      <div id="blocGauche" class="bloc hidden">
+        <ul>
+          <li>- Chef de projet digital ou chargé de projet</li>
+          <li>
+            - Responsable de la Sécurité des Services Informatiques (RSSI)
+          </li>
+          <li>- Consultant ou référent en informatique</li>
+          <li>- Directeur de projet</li>
+          <li>- Expert en cybersécurité</li>
+          <li>- Expert en ingénierie du logiciel</li>
+          <li>- Développeur d'applications informatiques</li>
+          <li>- Chargé d'études informatiques</li>
+          <li>- Responsable des services applicatifs</li>
+          <li>- Programmeur analyste</li>
+          <li>- Programmeur d'applications</li>
+          <li>- Technicien d'études informatiques</li>
+        </ul>
+      </div>
+
+      <script>
+        function afficherBlocGauche() {
+          const bloc = document.getElementById("blocGauche");
+          bloc.classList.remove("hidden");
+          bloc.classList.add("visible");
+        }
+      </script>
+
+      <!-- 2bloc -->
+
+      <!-- Bloc cliquable à gauche -->
+
+      <!-- Bloc caché à droite -->
+      <div id="blocDroit" class="bloc hidden">
+        <ul>
+          <li>- Pilote d'exploitation</li>
+          <li>- Administrateur systèmes et réseaux</li>
+          <li>- Gestionnaire du parc informatique de l'entreprise</li>
+          <li>- Analyste d'exploitation informatique</li>
+          <li>- Technicien des réseaux de télécommunications</li>
+          <li>- Technicien d'infrastructure</li>
+          <li>- Technicien systèmes et réseaux</li>
+        </ul>
+      </div>
+      <script>
+        function afficherBlocDroit() {
+          const bloc = document.getElementById("blocDroit");
+          bloc.classList.remove("hidden");
+          bloc.classList.add("visible");
+        }
+      </script>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <!-- --------footer------ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-2">
+            <img src="images/logo_anonymous.png" />
+          </div>
+        </div>
+
+        <hr />
+
+        <p class="copyright">Portfolio Lovson GOMA - Copyright 2023-2025</p>
+      </div>
+    </footer>
+
+    <!-- js pour toggle menu -->
+    <script>
+      let MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

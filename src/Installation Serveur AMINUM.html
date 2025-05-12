@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Installation Serveur AMINUM</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="/images/logo_anonymous.png" width="125" />
+          </div>
+
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="/index.html">Accueil</a></li>
+              <li><a href="/BTS SIO.html">BTS SIO</a></li>
+              <li><a href="/Ecole & Entreprise.html">Ecole & Entreprise</a></li>
+              <li>
+                <a href="/Projets & Missions.html">Projets & Missions</a>
+              </li>
+              <!-- <li><a href="Projets.html">Projets</a></li> -->
+              <li><a href="/Compétences.html">Compétences</a></li>
+              <li>
+                <a href="/Veille Technologique.html">Veille Technologique</a>
+              </li>
+              <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+
+            <img
+              src="/images/menu.png"
+              class="menu-icon"
+              onclick="menutoggle()"
+            />
+          </nav>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <br />
+            <br />
+
+            <h1>Installation Serveur AMINUM <br /></h1>
+            <br />
+            <p>
+              Vous y retrouverez ici l'ensemble des informations concernant Food
+              Project.<br />
+            </p>
+            <br />
+            <a href="#APropos" class="btn">Laissez vous guider&rarr;</a>
+          </div>
+        </div>
+        <br />
+      </div>
+    </header>
+<br>
+<br>
+    <h2 id="APropos" class="title">Installation Serveur AMINUM</h2>
+    <section class="A-Propos">
+      <div class="row">
+        <div class="col-2">
+          <h4>
+            <p>
+              La mission ici dans mon entreprise était de réaliser le montage et l'accordage des utilisateurs de l'entreprise à un seul et même serveur.
+              Pour installer un serveur, il faut choisir le bon matériel et le système d'exploitation, configurer le réseau pour qu'il fonctionne correctement, installer le système, le sécuriser avec des mises à jour et des réglages adaptés, puis définir ses rôles selon les besoins, comme héberger un site ou gérer des fichiers.
+            </p>
+            <br />
+          </h4>
+        </div>
+        
+        <div class="Entreprise-right">
+          <div class="col-2">
+            <div class="logo">
+              <img src="/images/Capture logo amin.PNG" width="125" />
+            </div>
+            <a href="https://www.societe.com/societe/aminum-842394314.html" class="btn"
+              >Aminum &rarr;
+            </a>
+        </div>
+      </div>
+    </section>
+
+
+    <br>
+    <br>
+    <br />
+    <br />
+    <br />
+    <br>
+    <br>
+    <br />
+    <br />
+    <br />
+    <br>
+    <br>
+    <br />
+    <br />
+    <!-- --------footer------ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-2">
+            <img src="/images/logo_anonymous.png" />
+          </div>
+        </div>
+
+        <hr />
+
+        <p class="copyright">Portfolio Lovson GOMA - Copyright 2023-2025</p>
+      </div>
+    </footer>
+
+    <!-- js pour toggle menu -->
+    <script>
+      let MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

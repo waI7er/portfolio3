@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="images/logo_anonymous.png" width="125" />
+          </div>
+
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="BTS SIO.html">BTS SIO</a></li>
+              <li><a href="Ecole & Entreprise.html">Ecole & Entreprise</a></li>
+              <li>
+                <a href="Projets & Missions.html">Projets & Missions</a>
+              </li>
+              <!-- <li><a href="Projets.html">Projets</a></li> -->
+              <li><a href="Compétences.html">Compétences</a></li>
+              <li>
+                <a href="Veille Technologique.html">Veille Technologique</a>
+              </li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <img
+              src="images/menu.png"
+              class="menu-icon"
+              onclick="menutoggle()"
+            />
+          </nav>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <br />
+            <br />
+            <h1>Mes Compétences<br /></h1>
+            <br />
+            <p>
+              Vous y retrouverez ici l'ensemble des compétences dont j'ai
+              emmagaziné durant le BTS.<br />
+            </p>
+            <br />
+            <a href="#Compétences" class="btn">Laissez vous guider&rarr;</a>
+          </div>
+        </div>
+        <br />
+      </div>
+    </header>
+    <!-- ------------Compétences---------- -->
+
+    <section id="Compétences" class="offer">
+      <div class="small-container">
+        <!-- <div class="row">
+          <div class="col-2">
+             <img src="images/exclusive.png" class="offer-img" />
+          </div> -->
+        <!-- <div class="row"> -->
+        <div class="row">
+          <div class="col-4">
+            <img src="images/html5-logo-transparent-4-removebg-preview.png" />
+          </div>
+          <div class="col-4">
+            <img src="images/th-removebg-preview.png" />
+          </div>
+          <div class="col-4">
+            <img src="images/R-removebg-preview.png" />
+          </div>
+          <div class="col-4">
+            <img src="images/R__1_-removebg-preview.png" />
+          </div>
+          <div class="col-4">
+            <img src="images/R__2_-removebg-preview.png" />
+          </div>
+          <div class="col-4">
+            <img
+              src="images/re269re79-react-logo-react-logo--removebg-preview.png"
+            />
+          </div>
+          <div class="col-4">
+            <img src="images/R__3_-removebg-preview.png" />
+          </div>
+          <div class="col-4">
+            <img src="images/R__4_-removebg-preview.png" />
+          </div>
+        </div>
+        <!-- <div class="col-2">
+            <h1>Brevet de Technicien Supérieur</h1>
+          </div>
+          <p>
+            Le BTS est un diplôme reconnu par l'état de niveau BAC+2. Ce cursus,
+            sanctionné par un diplôme de niveau Bac+2, se déroule en lycée ou en
+            école spécialisée et est reconnu pour son approche
+            professionnalisante. En combinant enseignements théoriques et stages
+            en entreprise, le BTS plus particulièrement dans mon cas le BTS SIO
+            (Services Informatiques aux Organisations), prépare efficacement les
+            étudiants à entrer sur le marché du travail. Il remplace aussi
+            depuis Septembre 2011, l'ancien BTS IG (Informatique de gestion). En
+            effet, cette nouvelle formule répond aux attentes de la profession
+            en matière de qualification. Le programme a évolué en fonction de la
+            place et du rôle des TIC (Technologies de l'Information et de la
+            Communication) et propose deux spécialités bien distinctes : Le BTS
+            SIO Option SISR et Option SLAM (la spécialités que j'ai choisis).
+          </p> -->
+
+        <!-- <div>
+            <a href="">Commandez &rarr;</a>
+          </div> -->
+      </div>
+
+      <!-- </div> -->
+    </section>
+
+    <!-- --------footer------ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-2">
+            <img src="images/logo_anonymous.png" />
+          </div>
+        </div>
+
+        <hr />
+
+        <p class="copyright">Portfolio Lovson GOMA - Copyright 2023-2025</p>
+      </div>
+    </footer>
+
+    <!-- js pour toggle menu -->
+    <script>
+      let MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

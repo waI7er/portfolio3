@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Puissance_4.css">
+    <title>Puissance 4</title>
+</head>
+<body>
+    <h1>Puissance 4</h1>
+    <p id="winner"></p>
+    <table id="zone_appuie" style="display: none;">
+        <tbody>
+            <tr id="ligne_appuie">
+                <td id ="za0"></td>
+                <td id ="za1"></td>
+                <td id ="za2"></td>
+                <td id ="za3"></td>
+                <td id ="za4"></td>
+                <td id ="za5"></td>
+                <td id ="za6"></td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="grid_p4" style="display: none;">
+        <tbody>
+            <tr>
+                <td id="0"></td>
+                <td id="1"></td>
+                <td id="2"></td>
+                <td id="3"></td>
+                <td id="4"></td>
+                <td id="5"></td>
+                <td id="6"></td>
+            </tr>
+            <tr>
+                <td id="7"></td>
+                <td id="8"></td>
+                <td id="9"></td>
+                <td id="10"></td>
+                <td id="11"></td>
+                <td id="12"></td>
+                <td id="13"></td>
+            </tr>
+            <tr>
+                <td id="14"></td>
+                <td id="15"></td>
+                <td id="16"></td>
+                <td id="17"></td>
+                <td id="18"></td>
+                <td id="19"></td>
+                <td id="20"></td>
+            </tr>
+            <tr>
+                <td id="21"></td>
+                <td id="22"></td>
+                <td id="23"></td>
+                <td id="24"></td>
+                <td id="25"></td>
+                <td id="26"></td>
+                <td id="27"></td>
+            </tr>
+            <tr>
+                <td id="28"></td>
+                <td id="29"></td>
+                <td id="30"></td>
+                <td id="31"></td>
+                <td id="32"></td>
+                <td id="33"></td>
+                <td id="34"></td>
+            </tr>
+            <tr>
+                <td id="35"></td>
+                <td id="36"></td>
+                <td id="37"></td>
+                <td id="38"></td>
+                <td id="39"></td>
+                <td id="40"></td>
+                <td id="41"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="reset" style="display: none;">Réinitialiser</button>
+    <div id="div_color">
+        <p id="p_choixCouleur">Choix des couleurs en anglais</p>
+        <div id="choixCouleur">
+            <p>Joueur1</p>
+            <input type="text" id="j1_color">
+            <p>Joueur2</p>
+            <input type="text" id="j2_color">
+        </div>
+        <button id="start">démarrer</button>
+    </div>
+    <button id="choice" style="display: none;">Choix couleur</button>
+    <footer>
+        <hr>
+        <p>20/03/2024 - LGO</p>
+    </footer>
+    <script src="Puissance_4.js"></script>
+</body>
+</html>
